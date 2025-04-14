@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background: #0f1b28;
+  color: #fefefe;
+  line-height: 1.6;
+}
+
+nav {
+  background: #1c2b38;
+  color: #fefefe;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  color: #f1c40f;
+}
+
+nav a {
+  color: #f1c40f;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f39c12;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+  background: #1e2a37;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: #f1c40f;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #f1c40f;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 0.5rem;
+}
+
+ul.skills,
+ul.other-skills {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+ul.skills li,
+ul.other-skills li {
+  background: #34495e;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  color: #fefefe;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  background: #1e2a37;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  color: #f1c40f;
+}
+
+.project-card a {
+  display: block;
+  color: #f39c12;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #f1c40f;
+}
+
+#contact p{
+  font-weight: bolder;
+}
+#contact a{
+  color: #646ea9;
+}
+
+footer {
+  background: #1c2b38;
+  color: #fefefe;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  color: #f39c12;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 0.5rem 0 0;
+  }
+}
